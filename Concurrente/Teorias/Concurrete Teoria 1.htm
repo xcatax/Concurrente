@@ -1,0 +1,46 @@
+<div class="material">
+	<div class="formHeader">
+		<div class="diagonal"></div>
+	    <div class="titleForm">
+	        <p>Teoría 1</p>
+	    </div>
+	</div>
+	<div class="formBoxed">
+		<div class="contentsList row">
+													<div class="description col-md-7">
+				<div class="borderTop"></div>
+				<br />
+				<div class="view ckeditor"><p>Apuntes de la teor&iacute;a 1.</p></div>
+				<div class="borderBottom"></div>
+			</div>
+							<div class="contents col-md-5">
+					<div class="formHeader">
+						<div class="diagonal"></div>
+					    <div class="titleForm">
+					        <p>Materiales</p>
+					    </div>
+					</div>
+					<div class="formBoxed">
+													<div>
+																								<a class="contentToView" href="/programacion-concurrente-2020/Contents/Material/View/Access/e0b93bce-ef94-11ea-899b-b26a7e7cf880" target="_blank"><img width="19" src="/images/resourcesItemType/iconHandout.svg" alt="Apunte" title="Apunte"/>Clase 1</a>
+																	<img class="viewed" src="/images/materialVisto.svg" alt="Material ya visto" title="Material ya visto" >
+															</div>
+											</div>
+				</div>
+					</div>
+	</div>
+</div>
+<button data-remodal-action="close" aria-label="Cerrar modal"  class="remodal-close"></button>
+<div class="nonVisibility">
+            <label class="label_new_windows">Nueva ventana de presentación de Materiales</label>
+</div>
+<script>
+    $( ".contentToView" ).click(function(e) {
+        enlace = $(this);
+       	if(enlace.next().length == 0 ){
+		    var elem = document.createElement("img");
+			elem.setAttribute("src", "/images/materialVisto.svg");
+			enlace.parent().append(elem);
+		}
+    });
+</script>
